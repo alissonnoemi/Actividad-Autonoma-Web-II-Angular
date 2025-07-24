@@ -1,0 +1,110 @@
+[
+  {
+    "id": 7,
+    "nombre": "Tónico Facial Refrescante",
+    "marca": "FreshTone",
+    "categoria": "Cuidado de la piel",
+    "precio": 11.90,
+    "disponible": true,
+    "imagen": "https://example.com/imagenes/tonico-facial.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Base Líquida Natural",
+    "marca": "TrueBlend",
+    "categoria": "Maquillaje",
+    "precio": 16.75,
+    "disponible": true,
+    "imagen": "https://example.com/imagenes/base-liquida.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Esmalte de Uñas Rojo Clásico",
+    "marca": "NailPro",
+    "categoria": "Uñas",
+    "precio": 6.40,
+    "disponible": true,
+    "imagen": "https://example.com/imagenes/esmalte-rojo.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Toallitas Desmaquillantes",
+    "marca": "CleanFace",
+    "categoria": "Cuidado de la piel",
+    "precio": 4.99,
+    "disponible": true,
+    "imagen": "https://example.com/imagenes/toallitas-desmaquillantes.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Gel Fijador para Cejas",
+    "marca": "BrowPerfect",
+    "categoria": "Maquillaje",
+    "precio": 7.25,
+    "disponible": false,
+    "imagen": "https://example.com/imagenes/gel-cejas.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Protector Solar SPF 50",
+    "marca": "SunGuard",
+    "categoria": "Cuidado de la piel",
+    "precio": 13.60,
+    "disponible": true,
+    "imagen": "https://example.com/imagenes/protector-solar.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "Mascarilla Capilar Reparadora",
+    "marca": "HairRenew",
+    "categoria": "Cuidado del cabello",
+    "precio": 17.80,
+    "disponible": true,
+    "imagen": "https://example.com/imagenes/mascarilla-capilar.jpg"
+  },
+  {
+    "id": 14,
+    "nombre": "Delineador Líquido Negro",
+    "marca": "EyeLine Pro",
+    "categoria": "Maquillaje",
+    "precio": 8.50,
+    "disponible": true,
+    "imagen": "https://example.com/imagenes/delineador-liquido.jpg"
+  },
+  {
+    "id": 15,
+    "nombre": "Crema para Manos con Aloe",
+    "marca": "HandCare",
+    "categoria": "Cuidado de la piel",
+    "precio": 5.30,
+    "disponible": false,
+    "imagen": "https://example.com/imagenes/crema-manos.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "Perfume Floral Suave",
+    "marca": "Essenza",
+    "categoria": "Fragancias",
+    "precio": 24.99,
+    "disponible": true,
+    "imagen": "https://example.com/imagenes/perfume-floral.jpg"
+  },
+  {
+  "id": 17,
+  "nombre": "Exfoliante Corporal de Café",
+  "marca": "CaféGlow",
+  "categoria": "Cuidado del cuerpo",
+  "precio": 12.50,
+  "disponible": true,
+  "imagen": "https://example.com/imagenes/exfoliante-cafe.jpg"
+  },
+  {
+    "id": 18,
+    "nombre": "Sombra de Ojos Paleta Neutra",
+    "marca": "EyeShine",
+    "categoria": "Maquillaje",
+    "precio": 19.99,
+    "disponible": true,
+    "imagen": "https://example.com/imagenes/sombra-ojos.jpg"
+  }
+]
