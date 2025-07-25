@@ -1,0 +1,14 @@
+h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: #C97FA0; 
+        }
+        .text-accent {
+            color: #F7A8B8; 
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(247, 168, 184, 0.15), 0 5px 15px -5px rgba(201, 127, 160, 0.10);
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-8px); 
+            box-shadow: 0 15px 35px -8px rgba(247, 168, 184, 0.25), 0 8px 20px -8px rgba(201, 127, 160, 0.15);
+        }

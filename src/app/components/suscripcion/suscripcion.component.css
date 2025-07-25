@@ -1,0 +1,24 @@
+  .gradient-text-feminine {
+             background: linear-gradient(to right, #F472B6, #EC4899, #D946EF); 
+             -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+         }
+         .shining-heart {
+             animation: pulse-heart 1.5s infinite;
+         }
+         @keyframes pulse-heart {
+             0%, 100% { transform: scale(1); opacity: 1; }
+             50% { transform: scale(1.1); opacity: 0.8; }
+         }
+         .input-feminine {
+             border-color: #F472B6; 
+         }
+         .input-feminine:focus {
+             ring-color: #EC4899; 
+         }
+         .button-feminine {
+             background-color: #EC4899; 
+         }
+         .button-feminine:hover {
+             background-color: #F472B6; 
+         }
