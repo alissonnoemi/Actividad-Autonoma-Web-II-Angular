@@ -1,0 +1,10 @@
+<section class="bg-[#f9f6f2] py-12 px-4 text-center">
+  <h2 class="text-3xl font-bold text-[#5d4037] mb-8">Destacados de la semana</h2>
+  <div class="grid gap-6 md:grid-cols-3 max-w-6xl mx-auto">
+    <div *ngFor="let producto of productos | slice:0:3" class="bg-white rounded-lg shadow p-4">
+      <img [src]="producto.imagenUrl" [alt]="producto.nombre" class="rounded mb-2 h-40 w-full object-cover">
+      <h3 class="text-lg font-semibold text-[#4e342e]">{{ producto.nombre }}</h3>
+      <p class="text-[#6d4c41]">{{ producto.marca }} – ${{ producto.precio }}</p>
+    </div>
+  </div>
+</section>

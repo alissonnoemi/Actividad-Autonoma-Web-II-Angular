@@ -6,7 +6,7 @@
     "categoria": "Cuidado de la piel",
     "precio": 11.90,
     "disponible": true,
-    "imagen": "https://example.com/imagenes/tonico-facial.jpg"
+    "imagenUrl": "https://i.postimg.cc/br6JK00K/image.png"
   },
   {
     "id": 8,
@@ -15,7 +15,7 @@
     "categoria": "Maquillaje",
     "precio": 16.75,
     "disponible": true,
-    "imagen": "https://example.com/imagenes/base-liquida.jpg"
+    "imagenUrl": "https://i.postimg.cc/hjY4s4SB/627e71bb5beeb44ec1489d8c7d62b205.jpg"
   },
   {
     "id": 9,
@@ -24,7 +24,7 @@
     "categoria": "Uñas",
     "precio": 6.40,
     "disponible": true,
-    "imagen": "https://example.com/imagenes/esmalte-rojo.jpg"
+    "imagenUrl": "https://i.postimg.cc/qBxfLMjH/fc3e42d57acd828ee137ecc47f507062.jpg"
   },
   {
     "id": 10,
@@ -33,7 +33,7 @@
     "categoria": "Cuidado de la piel",
     "precio": 4.99,
     "disponible": true,
-    "imagen": "https://example.com/imagenes/toallitas-desmaquillantes.jpg"
+    "imagenUrl": "https://i.postimg.cc/JnC3Y8K9/7e866f3f23015179c538c5754bb7dfa9.jpg"
   },
   {
     "id": 11,
@@ -42,7 +42,7 @@
     "categoria": "Maquillaje",
     "precio": 7.25,
     "disponible": false,
-    "imagen": "https://example.com/imagenes/gel-cejas.jpg"
+    "imagenUrl": "https://i.postimg.cc/tTrTZt12/28a811658ce9c7a5c6a5e97d4fecbb8e.jpg"
   },
   {
     "id": 12,
@@ -51,7 +51,7 @@
     "categoria": "Cuidado de la piel",
     "precio": 13.60,
     "disponible": true,
-    "imagen": "https://example.com/imagenes/protector-solar.jpg"
+    "imagenUrl": "https://i.postimg.cc/8c2TMyTB/988ebbb13f5cdf373e1cb5b8954fe3a5.jpg"
   },
   {
     "id": 13,
@@ -60,7 +60,7 @@
     "categoria": "Cuidado del cabello",
     "precio": 17.80,
     "disponible": true,
-    "imagen": "https://example.com/imagenes/mascarilla-capilar.jpg"
+    "imagenUrl": "https://i.postimg.cc/T34vD7Qy/8140a1f56c0f9cf9268000ccc5e1d38c.jpg"
   },
   {
     "id": 14,
@@ -69,7 +69,7 @@
     "categoria": "Maquillaje",
     "precio": 8.50,
     "disponible": true,
-    "imagen": "https://example.com/imagenes/delineador-liquido.jpg"
+    "imagenUrl": "https://i.postimg.cc/FsXRfR1t/75c2976dc1cd0209cdaf75d8dee7acf9.jpg"
   },
   {
     "id": 15,
@@ -78,7 +78,7 @@
     "categoria": "Cuidado de la piel",
     "precio": 5.30,
     "disponible": false,
-    "imagen": "https://example.com/imagenes/crema-manos.jpg"
+    "imagenUrl": "https://i.postimg.cc/HLNWTWFh/e498f62c3730a65c51219c2da4138b5f.jpg"
   },
   {
     "id": 16,
@@ -87,24 +87,24 @@
     "categoria": "Fragancias",
     "precio": 24.99,
     "disponible": true,
-    "imagen": "https://example.com/imagenes/perfume-floral.jpg"
+    "imagenUrl": "https://i.postimg.cc/J0V1B6r3/731284ab001f334e655d481ae132ae01.jpg"
   },
   {
-  "id": 17,
-  "nombre": "Exfoliante Corporal de Café",
-  "marca": "CaféGlow",
-  "categoria": "Cuidado del cuerpo",
-  "precio": 12.50,
-  "disponible": true,
-  "imagen": "https://example.com/imagenes/exfoliante-cafe.jpg"
+    "id": 17,
+    "nombre": "Champú Hidratante",
+    "marca": "HydraShine",
+    "categoria": "Cuidado del cabello",
+    "precio": 9.99,
+    "disponible": true,
+    "imagenUrl": "https://i.postimg.cc/dtFssxSw/7d479fd25abb269b4cdddf28e7946799.jpg"
   },
   {
     "id": 18,
-    "nombre": "Sombra de Ojos Paleta Neutra",
-    "marca": "EyeShine",
-    "categoria": "Maquillaje",
-    "precio": 19.99,
+    "nombre": "Bálsamo Labial Hidratante",
+    "marca": "LipCare",
+    "categoria": "Cuidado de los labios",
+    "precio": 3.50,
     "disponible": true,
-    "imagen": "https://example.com/imagenes/sombra-ojos.jpg"
+    "imagenUrl": "https://i.postimg.cc/j2bbjDcZ/7f73ea8b4ad4592620e6ffc70058c343.jpg"
   }
 ]
