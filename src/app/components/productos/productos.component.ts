@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Producto } from './productos';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-productos',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './productos.component.html',
   styleUrl: './productos.component.css'
 })
@@ -29,10 +30,19 @@ export class ProductosComponent {
     });
   }
   modalProducto: Producto | null = null;
-abrirModal(producto: Producto): void {
-  this.modalProducto = producto;
-}
-cerrarModal(): void {
-  this.modalProducto = null;
-}
+  cantidadSeleccionada: number = 0;
+
+  abrirModal(producto: any) {
+    this.modalProducto = producto;
+    this.cantidadSeleccionada = 0; 
+  }
+
+  cerrarModal() {
+    this.modalProducto = null;
+  }
+
+  comprarProducto(producto: any, cantidad: number) {
+    
+    alert(`¡Agregado al carrito!\n${producto.nombre}\nCantidad: ${cantidad}\nTotal: $${producto.precio * cantidad}`);
+  }
 }

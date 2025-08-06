@@ -1,4 +1,4 @@
-<nav class="sticky top-0 w-full z-50 bg-white dark:bg-[#2D221B] border-b border-[#C2B1A1] shadow-md transition-colors">
+<nav class="sticky top-0 w-full z-50 bg-white/80 dark:bg-[#2D221B]/80 border-b border-[#C2B1A1] shadow-md backdrop-blur-md transition-colors">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#7B4B2A]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -6,7 +6,13 @@
       </svg>
       <span class="self-center text-2xl font-semibold whitespace-nowrap text-[#7B4B2A]">CosmeBelleza</span>
     </a>
-    <div class="flex items-center space-x-2 md:order-2">
+    <div class="flex items-center space-x-4 md:order-2">
+      <a routerLink="login" class="inline-flex items-center px-4 py-2 rounded-lg border border-[#C2B1A1] text-[#7B4B2A] bg-white/60 hover:bg-[#F6F1ED] transition-colors shadow-sm font-medium">
+        <svg class="w-5 h-5 mr-2 text-[#7B4B2A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 15c2.485 0 4.797.657 6.879 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        Login
+      </a>
       <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 text-[#7B4B2A] rounded-lg md:hidden hover:bg-[#EADBC8]" aria-controls="navbar-default" aria-expanded="false">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 17 14">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -14,10 +20,16 @@
       </button>
     </div>
     <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-default">
-      <ul class="flex flex-col p-4 mt-4 font-medium bg-[#F6F1ED] border border-[#C2B1A1] rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
-        <li><a routerLink="home" class="block py-2 px-3 text-black bg-[#7B4B2A] rounded md:bg-transparent md:text-[#7B4B2A] md:p-0">Inicio</a></li>
-        <li><a routerLink="nosotras" class="block py-2 px-3 text-[#7B4B2A] hover:bg-[#EADBC8] md:hover:bg-transparent md:hover:text-[#A67C52] md:p-0">Nosotras</a></li>
-        <li><a routerLink="productos" class="block py-2 px-3 text-[#7B4B2A] hover:bg-[#EADBC8] md:hover:bg-transparent md:hover:text-[#A67C52] md:p-0">Productos</a></li>
+      <ul class="flex flex-col p-4 mt-4 font-medium bg-[#F6F1ED]/80 border border-[#C2B1A1] rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
+        <li>
+          <a routerLink="home" class="block py-2 px-3 text-black bg-[#7B4B2A] rounded md:bg-transparent md:text-[#7B4B2A] md:p-0 hover:underline transition">Inicio</a>
+        </li>
+        <li>
+          <a routerLink="nosotras" class="block py-2 px-3 text-[#7B4B2A] hover:bg-[#EADBC8] md:hover:bg-transparent md:hover:text-[#A67C52] md:p-0 hover:underline transition">Nosotras</a>
+        </li>
+        <li>
+          <a routerLink="productos" class="block py-2 px-3 text-[#7B4B2A] hover:bg-[#EADBC8] md:hover:bg-transparent md:hover:text-[#A67C52] md:p-0 hover:underline transition">Productos</a>
+        </li>
       </ul>
     </div>
   </div>

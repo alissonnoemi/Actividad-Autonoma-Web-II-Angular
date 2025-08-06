@@ -1,0 +1,7 @@
+
+.producto-img {
+  width: 200%;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 0.5rem; 
+}
