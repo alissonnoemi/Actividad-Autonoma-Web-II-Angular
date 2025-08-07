@@ -15,6 +15,7 @@ import { EmailPipe } from '../../pipes/email.pipe';
 })
 export class RegistroUsuariosComponent {
   enviado: boolean = false;
+  registroExitoso: boolean = false;
   
   constructor(private fb:FormBuilder, private router: Router, private authService: AutenticacionService){}
   registroForm:FormGroup=this.fb.group({
@@ -28,6 +29,7 @@ export class RegistroUsuariosComponent {
       this.authService.registro(usuario).subscribe({
         next: (usuarioCreado) => {
           this.enviado = true;
+          this.registroExitoso = true;
           console.log('Registro Exitoso', usuarioCreado);
           setTimeout(() => {
             this.router.navigate(['/login']);

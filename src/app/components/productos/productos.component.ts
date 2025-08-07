@@ -42,7 +42,7 @@ export class ProductosComponent {
   }
 
   comprarProducto(producto: any, cantidad: number) {
-    
     alert(`¡Agregado al carrito!\n${producto.nombre}\nCantidad: ${cantidad}\nTotal: $${producto.precio * cantidad}`);
+    this.cerrarModal();
   }
 }

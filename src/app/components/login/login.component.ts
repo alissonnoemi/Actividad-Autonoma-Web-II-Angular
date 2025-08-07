@@ -38,10 +38,13 @@ export class LoginComponent {
         next: (response) => {
           this.loading = false;
           if (response.success) {
-            // Redirigir a la URL guardada o al home
-            const redirectUrl = localStorage.getItem('redirectUrl') || '/';
-            localStorage.removeItem('redirectUrl');
-            this.router.navigateByUrl(redirectUrl);
+            const redirectUrl = localStorage.getItem('redirectUrl');
+            if (redirectUrl) {
+              localStorage.removeItem('redirectUrl');
+              this.router.navigateByUrl(redirectUrl);
+            } else {
+              this.router.navigate(['/productos']);
+            }
           } else {
             this.errorMessage = response.message || 'Error al iniciar sesión';
           }

@@ -20,6 +20,13 @@
       "email": "camila@GMAIL.COM",
       "password": "123456",
       "fechaRegistro": "2025-08-07T04:56:45.705Z"
+    },
+    {
+      "id": "26d6",
+      "nombre": "luis castillo",
+      "email": "luis@gmail.com",
+      "password": "123456",
+      "fechaRegistro": "2025-08-07T12:30:48.824Z"
     }
   ]
 }

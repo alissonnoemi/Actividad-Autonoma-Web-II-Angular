@@ -1,74 +1,79 @@
-<div class="min-h-screen bg-gradient-to-br from-[#fff7f0] via-[#fbeee6] to-[#f7cac9] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-md w-full space-y-8">
-    <div>
-      <h2 class="mt-6 text-center text-4xl font-[Dancing Script,cursive] font-bold text-[#d48c9c]">
-        Crear Cuenta
-      </h2>
-      <p class="mt-2 text-center text-sm text-[#6e3b2e]">
-        Únete a la familia CosmeBelleza
-      </p>
+<div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-100 via-white to-pink-200 py-8 px-4">
+  <div class="w-full max-w-lg bg-white/90 rounded-3xl shadow-2xl border border-pink-200 p-8">
+    <div class="flex flex-col items-center mb-8">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-[#7B4B2A] mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 2h4v4h-4V2zM5 8a1 1 0 011-1h12a1 1 0 011 1v3a7 7 0 11-14 0V8z" />
+      </svg>
+      <span class="text-3xl font-extrabold text-[#7B4B2A] mb-2">CosmeBelleza</span>
+      <h2 class="text-2xl font-bold text-pink-700 text-center mb-2">Crear Cuenta</h2>
+      <p class="text-sm text-[#6e3b2e] text-center">Únete a la familia CosmeBelleza</p>
     </div>
-    <form class="mt-8 space-y-6 bg-white rounded-3xl shadow-2xl p-8 border-2 border-[#ffd6e0]" [formGroup]="registroForm" (ngSubmit)="registrar()">
-      <div class="space-y-4">
-        <div>
-          <label for="nombre" class="block text-sm font-medium text-[#6e3b2e]">Nombre Completo</label>
-          <input 
-            id="nombre" 
-            name="nombre" 
-            type="text" 
-            formControlName="nombre"
-            class="mt-1 appearance-none relative block w-full px-3 py-2 border border-[#ffd6e0] placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-[#d48c9c] focus:border-[#d48c9c] focus:z-10 sm:text-sm"
-            placeholder="Tu nombre completo">
-          <div *ngIf="registroForm.get('nombre')?.invalid && registroForm.get('nombre')?.touched" class="text-red-500 text-xs mt-1">
-            Nombre requerido
-          </div>
-          <div *ngIf="registroForm.get('nombre')?.value" class="text-green-600 text-xs mt-1">
-            Vista previa: {{ registroForm.get('nombre')?.value | nombre }}
-          </div>
-        </div>
-        <div>
-          <label for="email" class="block text-sm font-medium text-[#6e3b2e]">Correo Electrónico</label>
-          <input 
-            id="email" 
-            name="email" 
-            type="email" 
-            formControlName="email"
-            class="mt-1 appearance-none relative block w-full px-3 py-2 border border-[#ffd6e0] placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-[#d48c9c] focus:border-[#d48c9c] focus:z-10 sm:text-sm"
-            placeholder="tu@email.com">
-          <div *ngIf="registroForm.get('email')?.invalid && registroForm.get('email')?.touched" class="text-red-500 text-xs mt-1">
-            Email requerido y válido
-          </div>
-          <div *ngIf="registroForm.get('email')?.value" class="text-green-600 text-xs mt-1">
-            Vista previa: {{ registroForm.get('email')?.value | email }}
-          </div>
-        </div>
-        <div>
-          <label for="password" class="block text-sm font-medium text-[#6e3b2e]">Contraseña</label>
-          <input 
-            id="password" 
-            name="password" 
-            type="password" 
-            formControlName="password"
-            class="mt-1 appearance-none relative block w-full px-3 py-2 border border-[#ffd6e0] placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-[#d48c9c] focus:border-[#d48c9c] focus:z-10 sm:text-sm"
-            placeholder="Mínimo 6 caracteres">
-          <div *ngIf="registroForm.get('password')?.invalid && registroForm.get('password')?.touched" class="text-red-500 text-xs mt-1">
-            Contraseña mínimo 6 caracteres
-          </div>
-        </div>
-      </div>
-
+    <form class="space-y-6" [formGroup]="registroForm" (ngSubmit)="registrar()">
       <div>
-        <button 
-          type="submit" 
-          class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-lg text-black bg-[#d48c9c] hover:bg-[#c67a8a] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#d48c9c] disabled:opacity-50 disabled:cursor-not-allowed">
-          Registrar
-        </button>
+        <label for="nombre" class="block text-sm font-medium text-pink-700 mb-1">Nombre Completo</label>
+        <input 
+          id="nombre" 
+          name="nombre" 
+          type="text" 
+          formControlName="nombre"
+          class="block w-full rounded-lg border border-pink-200 px-4 py-2 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-300 transition" 
+          placeholder="Tu nombre completo">
+        <div *ngIf="registroForm.get('nombre')?.invalid && registroForm.get('nombre')?.touched" class="text-red-500 text-xs mt-1">
+          Nombre requerido
+        </div>
       </div>
-
-      <div class="text-center">
-        <p class="text-sm text-[#6e3b2e]">
-          ¿Ya tienes cuenta? 
-          <button type="button" (click)="irALogin()" class="font-medium text-[#d48c9c] hover:text-[#c67a8a]">
+      <div>
+        <label for="email" class="block text-sm font-medium text-pink-700 mb-1">Correo Electrónico</label>
+        <input 
+          id="email" 
+          name="email" 
+          type="email" 
+          formControlName="email"
+          class="block w-full rounded-lg border border-pink-200 px-4 py-2 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-300 transition" 
+          placeholder="tu@email.com">
+        <div *ngIf="registroForm.get('email')?.invalid && registroForm.get('email')?.touched" class="text-red-500 text-xs mt-1">
+          Email requerido y válido
+        </div>
+      </div>
+      <div>
+        <label for="password" class="block text-sm font-medium text-pink-700 mb-1">Contraseña</label>
+        <input 
+          id="password" 
+          name="password" 
+          type="password" 
+          formControlName="password"
+          class="block w-full rounded-lg border border-pink-200 px-4 py-2 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-300 transition" 
+          placeholder="Mínimo 6 caracteres">
+        <div *ngIf="registroForm.get('password')?.invalid && registroForm.get('password')?.touched" class="text-red-500 text-xs mt-1">
+          Contraseña mínimo 6 caracteres
+        </div>
+      </div>
+      <button 
+        type="submit" 
+        class="w-full bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 rounded-lg shadow-md transition disabled:opacity-50 disabled:cursor-not-allowed"
+        [disabled]="registroForm.invalid">
+        {{ registroExitoso ? '¡Usuario registrado con éxito!' : 'Registrar' }}
+      </button>
+      <div *ngIf="registroExitoso" class="mt-6 text-center">
+        <span class="inline-block bg-green-100 text-green-700 px-4 py-2 rounded-lg font-semibold shadow">
+          ¡Usuario registrado con éxito!
+        </span>
+      </div>
+      <div class="mt-8 text-center">
+        <div class="text-gray-700">
+          <span *ngIf="registroForm.get('nombre')?.value">
+            Nombre: {{ registroForm.get('nombre')?.value | nombre }}
+          </span>
+          <br>
+          <span *ngIf="registroForm.get('email')?.value">
+            Email: {{ registroForm.get('email')?.value | email }}
+          </span>
+        </div>
+      </div>
+      <div class="text-center mt-6">
+        <p class="text-sm text-gray-500">
+          ¿Ya tienes cuenta?
+          <button type="button" (click)="irALogin()" class="font-medium text-pink-600 hover:text-pink-700 underline transition">
             Inicia sesión aquí
           </button>
         </p>
