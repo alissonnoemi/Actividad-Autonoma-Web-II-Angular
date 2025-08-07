@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "nombre": "Usuario Prueba",
+      "email": "test@test.com",
+      "password": "123456",
+      "fechaRegistro": "2024-07-01T00:00:00.000Z"
+    }
+  ]
+}
