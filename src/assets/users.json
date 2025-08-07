@@ -27,6 +27,13 @@
       "email": "luis@gmail.com",
       "password": "123456",
       "fechaRegistro": "2025-08-07T12:30:48.824Z"
+    },
+    {
+      "id": "8d92",
+      "nombre": "Matias Campos",
+      "email": "matias@gmail.com",
+      "password": "123456",
+      "fechaRegistro": "2025-08-07T12:50:36.945Z"
     }
   ]
 }
